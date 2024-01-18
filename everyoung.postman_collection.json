@@ -7,13 +7,13 @@
 	},
 	"item": [
 		{
-			"name": "https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/hello",
+			"name": "https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/search",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"安妮李\"\r\n}",
+					"raw": "{\r\n    \"name\": \"吴华文\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -21,7 +21,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/hello",
+					"raw": "https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/search",
 					"protocol": "https",
 					"host": [
 						"6nawpe09d3",
@@ -32,7 +32,7 @@
 					],
 					"path": [
 						"Prod",
-						"hello"
+						"search"
 					]
 				}
 			},
