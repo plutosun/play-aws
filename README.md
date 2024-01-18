@@ -1,5 +1,9 @@
 # Learning Curve
 
+## Try
+[PostMan](https://github.com/plutosun/play-aws/blob/main/everyoung.postman_collection.json)
+Download the json file from link above and import to postman app, only 1 api, just click to test
+
 ## Setup accounts
 + Github
 + Aws
