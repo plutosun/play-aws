@@ -14,3 +14,13 @@
 + Update event js with real my design
 + Update template.yaml to support HTTP POST only
 + Learn how to pass parameter from event request parameters
+
+
+## Study on best prompt via ChatGpt chat
++ TODO
+
+## Write code with open Ai library
++ TODO
+
+## Deploy to lambda function with final function
++ TODO
