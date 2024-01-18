@@ -29,17 +29,23 @@ Request Body:
 + Update template.yaml to support HTTP POST only
 + Learn how to pass parameter from event request parameters
 
-
 ## Study on best prompt via ChatGpt chat
 + Try adjust prompt to let answer accurate and same as requested
-
-## Deploy to lambda function
-+ Learn how to set environment variable in lambda
 
 ## Write code with open Ai library
 + Learn basic usage for my case - chat with keyword and get answer
 + Learn how to set prompt and context for stateless api call and train the model
 + Check error logs from aws CloudWatch
 + Learn to use globe scope variables to cache search result for cost efficiency
++ set prompt list and add restriction on search logic
 
+## Deploy to lambda function
++ Learn how to set environment variable in lambda
 
+## Post-mortem
++ api gateway logging enabling in cloudwatch and check 502 bad gateway issue
++ For sake of open ai cost efficiency, need to add some extra validation on user raw input to avoid trigger downstream open api call for invalid request 
++ Learn how to add authentication with lambda way
++ Learn how to local debugging lambda within vs code
++ Learn how to unit test with Jest
++ Require time to research on other parameters on open ai api request to see if any parameters can be adjust and used for current case
