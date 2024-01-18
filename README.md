@@ -33,8 +33,13 @@ Request Body:
 ## Study on best prompt via ChatGpt chat
 + Try adjust prompt to let answer accurate and same as requested
 
-## Write code with open Ai library
-+ TODO
-
 ## Deploy to lambda function
-+ TODO
++ Learn how to set environment variable in lambda
+
+## Write code with open Ai library
++ Learn basic usage for my case - chat with keyword and get answer
++ Learn how to set prompt and context for stateless api call and train the model
++ Check error logs from aws CloudWatch
++ Learn to use globe scope variables to cache search result for cost efficiency
+
+
