@@ -3,7 +3,7 @@
 ## How to Play
 + Http Definition 
 ```bash
-https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/hello
+https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/search
 POST
 Request Body:
 {
