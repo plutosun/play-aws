@@ -1,6 +1,16 @@
 # Learning Curve
 
 ## How to Play
++ Http Definition 
+```bash
+https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/hello
+POST
+Request Body:
+{
+    "name": "安妮李"
+}
+```
+
 + [PostMan Collection Json](https://github.com/plutosun/play-aws/blob/main/everyoung.postman_collection.json)
 + Download the json file from link above and import to postman app, only 1 api, just click to test
 
@@ -21,7 +31,7 @@
 
 
 ## Study on best prompt via ChatGpt chat
-+ TODO
++ Try adjust prompt to let answer accurate and same as requested
 
 ## Write code with open Ai library
 + TODO
