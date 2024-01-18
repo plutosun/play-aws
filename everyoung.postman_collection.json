@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "63790f6b-7e62-477a-97d1-6a9d144faa43",
+		"name": "everyoung",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1216881"
+	},
+	"item": [
+		{
+			"name": "https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/hello",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"安妮李\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://6nawpe09d3.execute-api.ap-southeast-2.amazonaws.com/Prod/hello",
+					"protocol": "https",
+					"host": [
+						"6nawpe09d3",
+						"execute-api",
+						"ap-southeast-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"Prod",
+						"hello"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
