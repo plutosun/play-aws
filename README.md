@@ -43,10 +43,10 @@ Request Body:
 + Learn how to set environment variable in lambda
 
 ## Post-mortem
-+ api gateway logging enabling in cloudwatch and check 502 bad gateway issue
++ Resolve randomly 502 badgateway responding from api gateway, learn how to setup logging in aws (DONE)
++ Need to figure out aws lambda global scoped variable singlton or per instance, decide to consider concurrency case.
 + For sake of open ai cost efficiency, need to add some extra validation on user raw input to avoid trigger downstream open api call for invalid request 
 + Learn how to add authentication with lambda way
 + Learn how to local debugging lambda within vs code
 + Learn how to unit test with Jest
 + Require time to research on other parameters on open ai api request to see if any parameters can be adjust and used for current case
-+ Resolve randomly 502 badgateway responding from api gateway, learn how to setup logging in aws (DONE)
