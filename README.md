@@ -43,7 +43,8 @@ Request Body:
 + Learn how to set environment variable in lambda
 
 ## Post-mortem
-+ Resolve randomly 502 badgateway responding from api gateway, learn how to setup logging in aws (DONE)
++ Based on extensive request to adjust prompt to support flexible human language understanding and search out name (DONE)
++ Resolve randomly 502 badgateway responding from api gateway, learn how to setup logging in aws, set longer lambda function timeout value (DONE)
 + Need to figure out aws lambda global scoped variable singlton or per instance, decide to consider concurrency case.
 + For sake of open ai cost efficiency, need to add some extra validation on user raw input to avoid trigger downstream open api call for invalid request 
 + Learn how to add authentication with lambda way
