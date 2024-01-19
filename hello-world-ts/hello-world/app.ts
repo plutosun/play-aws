@@ -50,7 +50,6 @@ export const lambdaHandler = async (event: any): Promise<APIGatewayProxyResult> 
         if (event.httpMethod !== 'POST') {
             throw new Error(`postMethod only accepts POST method, you tried: ${event.httpMethod} method.`);
         }
-        console.info('received:', event);
         const body = JSON.parse(event.body);
         let name = body.name;
         if(!name || !name.trim()){
@@ -83,7 +82,8 @@ export const lambdaHandler = async (event: any): Promise<APIGatewayProxyResult> 
         if(!isNaN(answerNum)){
           //console.log(resultMap.get(answerNum));
           answer=resultMap.get(answerNum);
-          if(!resultCache.has(name)){
+          if(!resultCache.has(name)){ 
+            //not sure aws lambda function global variable is single-instance or shared cross multiple instance, IF concurrancy, require object lock. add one more check here to protect competion add 
             resultCache.set(name,answer);
           }
         }

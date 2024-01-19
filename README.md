@@ -49,4 +49,4 @@ Request Body:
 + Learn how to local debugging lambda within vs code
 + Learn how to unit test with Jest
 + Require time to research on other parameters on open ai api request to see if any parameters can be adjust and used for current case
-+ Resolve randomly 502 badgateway responding from api gateway, learn how to setup logging in aws
++ Resolve randomly 502 badgateway responding from api gateway, learn how to setup logging in aws (DONE)
