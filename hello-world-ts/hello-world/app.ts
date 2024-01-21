@@ -30,9 +30,7 @@ resultMap.set(2,"yueling zhang 月林张");
 resultMap.set(3,"huawen wu 华文吴");
 resultMap.set(4,"annie lee 李安妮");
 
-type Messages = Parameters<typeof openai.chat.completions.create>[0]["messages"];
-type Functions = Parameters<typeof openai.chat.completions.create>[0]["functions"];
-type FunctionCall  = Parameters<typeof openai.chat.completions.create>[0]["function_call"];
+
 
 const findNameByIndex=(nameIndex:number, similarities:[]):string=>{
   if(nameIndex<=0){
@@ -131,11 +129,11 @@ export const lambdaHandler = async (event: any): Promise<APIGatewayProxyResult> 
             answer=func(funcArguments.nameIndex, funcArguments.similarities)
             console.log(answer);
 
-            // if(funcArguments.nameIndex>0){
-            //     if(!resultCache.has(name)){ 
-            //         resultCache.set(name,answer);
-            //     }
-            // }
+            if(funcArguments.nameIndex>0){
+                if(!resultCache.has(name)){ 
+                    resultCache.set(name,answer);
+                }
+            }
         }
 
         return {
