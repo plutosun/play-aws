@@ -32,9 +32,15 @@ resultMap.set(4,"annie lee 李安妮");
 
 
 
-const findNameByIndex=(nameIndex:number, similarities:[]):string=>{
+const findNameByIndex=(nameIndex:number, similarities:any[]):string=>{
   if(nameIndex<=0){
     return "";
+  }
+  if(similarities && similarities.length>0){
+    const s1=similarities[0];
+    if(nameIndex!=s1.index){
+        nameIndex=s1.index;
+    }
   }
   const answer = resultMap.get(nameIndex);
   return answer?answer:"Not found";
